@@ -15,9 +15,9 @@ public class Question5 {
 		}
 		kb.close();
 		for (int i = 0; i < nums.length; i++) {
-			int check = 1;
-			for (int j = 0; j < nums.length - 1; j++) {
-				if (nums[i] == nums[j+1]) {
+			int check = 0;
+			for (int j = 0; j < nums.length; j++) {
+				if (nums[i] == nums[j]) {
 					check++;
 				}
 			}

@@ -19,6 +19,9 @@ public class Question2 {
 		}
 		kb.close();
 		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] < joker) {
+				arr[i] = 0;
+			}
 			while (arr[i] >= joker) {
 				arr[i] -= joker;
 			}
